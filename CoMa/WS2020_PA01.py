@@ -1,6 +1,7 @@
 #CoMa1 WS2020
 #f(x) = ax² + bx + c
 #g(x) = dx² + ex + f
+#test
 def roots(a=int,b=int,c=int,d=int,e=int,f=int):
     #the function calculates the coefficients, puts them into a list and
     #counts if there is a switch between positive and negative Elements
