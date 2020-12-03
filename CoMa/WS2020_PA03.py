@@ -1,6 +1,8 @@
 import math
-import os 
+import time
+
 def sieve(n):
+    start = time.time()
     N = prepareList(n)
     if N != False:
         for i in range(1,int(math.sqrt(n))):
@@ -17,6 +19,8 @@ def sieve(n):
     for i in range(1,n):
         if N[i]==True:
             prim.append(i+1)
+    stopped_time = time.time() - start
+    print("{}s for {} elemnts".format(stopped_time,n))
     return prim
 
 
@@ -71,7 +75,7 @@ def divisornumber(n):
 
     if N == None:
         return None
-        
+
     elif n == 1:
         return 1
 
