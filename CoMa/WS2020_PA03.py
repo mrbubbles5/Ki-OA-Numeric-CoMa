@@ -19,8 +19,8 @@ def sieve(n):
     for i in range(1,n):
         if N[i]==True:
             prim.append(i+1)
-    stopped_time = time.time() - start
-    print("{}s for {} elemnts".format(stopped_time,n))
+    stopped_time = int(time.time() - start)
+    print("{}s for {} elements".format(stopped_time,n))
     return prim
 
 
