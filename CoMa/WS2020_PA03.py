@@ -59,7 +59,7 @@ def factorization(n):
 
     for i in range(len(prims)-1,-1,-1):
         j = 0
-        print(dummy_n,prims[i],j)
+        
         while dummy_n%prims[i]**(j+1)==0:
             j += 1
 
